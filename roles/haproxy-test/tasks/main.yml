@@ -1,0 +1,21 @@
+---
+
+  - name: HAProxy Request 1
+    uri:
+      url: http://localhost/
+      return_content: yes
+    register: html_body
+  - debug: msg='{{ html_body.content }}'
+  - name: HAProxy Request 2
+    uri:
+      url: http://localhost/
+      return_content: yes
+    register: html_body
+  - debug: msg='{{ html_body.content }}'
+  - name: HAProxy Request 3
+    uri:
+      url: http://localhost/
+      return_content: yes
+    register: html_body
+  - debug: msg='{{ html_body.content }}'
+
