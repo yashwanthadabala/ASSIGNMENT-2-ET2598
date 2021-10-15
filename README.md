@@ -11,3 +11,5 @@ These are the ip addresses of the servers created:
 10.1.0.94 devC
 188.212.109.91 devhaproxy
 188.212.108.132 bastionET2598
+ 
+ 
