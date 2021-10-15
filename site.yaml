@@ -1,0 +1,12 @@
+---
+- hosts: webservers
+  become: yes
+  roles:
+    - nginx
+- hosts: all
+  gather_facts: yes
+- hosts: haproxy
+  become: yes
+  roles:
+    - haproxy
+    - haproxy-test
